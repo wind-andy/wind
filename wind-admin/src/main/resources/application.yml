@@ -16,7 +16,7 @@ wind:
 # 开发环境配置
 server:
   # 服务器的HTTP端口，默认为80
-  port: 80
+  port: 8089
   servlet:
     # 应用的访问路径
     context-path: /
@@ -74,8 +74,8 @@ mybatis:
     mapperLocations: classpath*:mapper/**/*Mapper.xml
 
 # PageHelper分页插件
-pagehelper: 
-  helperDialect: mysql
-  reasonable: true
-  supportMethodsArguments: true
-  params: count=countSql 
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql

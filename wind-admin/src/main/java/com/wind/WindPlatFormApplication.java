@@ -22,6 +22,7 @@ public class WindPlatFormApplication {
         public static void main(String[] args)
         {
             SpringApplication.run(WindPlatFormApplication.class, args);
+            System.out.println("*********启动成功*************");
         }
 
 }
