@@ -6,6 +6,7 @@ import com.wind.system.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -17,6 +18,8 @@ public class TestServiceImpl implements TestService {
        // return testMapper.getTestInfo();
         Test test = testMapper.selectByPrimaryKey(1L);
         System.out.println("*****************"+test.getMobile());
-        return null;
+        List<Test> list = new ArrayList<>();
+        list.add(test);
+        return list;
     }
 }
